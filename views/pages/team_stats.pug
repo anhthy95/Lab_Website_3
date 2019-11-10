@@ -31,7 +31,7 @@ div.container
             else if(game.visitor_score > game.home_score)
               td=game.visitor_name
             else
-              td='Draw'
+              td='Tie'
   br
 
   table.table.text-center
@@ -42,7 +42,7 @@ div.container
       //- TODO: Display the total number of wins here. This value should come from your server-side db query.
       //- TODO: Display the total number of losses here. This value should come from your server-side db query.
 
-      - if(wins && losses)
+      if(wins && losses)
         tr
           td=wins.num
           td=losses.num
